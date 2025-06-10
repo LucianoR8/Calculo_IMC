@@ -1,22 +1,36 @@
-let peso;
-let altura;
-
-
 document.addEventListener("DOMContentLoaded", function (){
     const botao = document.querySelector(".btn");
+    const peso = document.getElementById("peso");
+    const altura = document.getElementById("altura");
+
+    
+        altura.addEventListener("input", function(ponto) {
+            let valor = ponto.target.value.replace(/\D/g, '');
+            if (valor.length >= 3){
+                const inteiro = valor.slice(0, valor.length -2);
+                const decimal = valor.slice(-2);
+                ponto.target.value = `${inteiro}.${decimal}`;
+            } else{
+                ponto.target.value = valor;
+            }
+        });
+
 
     botao.addEventListener("click", function (evento){
         evento.preventDefault();
 
-        const peso = parseFloat(document.getElementById("peso").value.replace(",", "."));
-        const altura = parseFloat(document.getElementById("altura").value.replace(",", "."));
+        const valPeso = parseFloat(document.getElementById("peso").value.replace(",", "."));
+        const valAltura = parseFloat(document.getElementById("altura").value.replace(",", "."));
 
-        if (isNaN(peso) || isNaN(altura) || altura === 0 ) {
+
+
+
+        if (isNaN(valPeso) || isNaN(valAltura) || valAltura === 0 ) {
             alert("Informe peso e altura válidos!");
             return; 
         }
 
-        const imc = peso / (altura * altura);
+        const imc = valPeso / (valAltura * valAltura);
         let grau = "";
         let obs = "";
 
@@ -41,10 +55,11 @@ document.addEventListener("DOMContentLoaded", function (){
         }
 
         const resultado = document.querySelector(".container-imc");
+        resultado.style.display = "block";
         resultado.innerHTML = `
-        <p>Seu IMC é: ${imc.toFixed(2)}</p>
-        <p>Grau: ${grau}</p>
-        <p>Observação: ${obs}</p>
+        <p class="txt-imc">IMC: ${imc.toFixed(2)}</p>
+        <p class="txt-imc">Grau: ${grau}</p>
+        <p class="txt-imc">Observação: ${obs}</p>
         `;
     });
 
