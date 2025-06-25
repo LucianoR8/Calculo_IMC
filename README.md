@@ -1,8 +1,10 @@
-# Essa aplicação tem como o intuito fornecer o **Índice de Massa Corporal** do usuário, assim podendo saber se está acima, abaixo ou no peso ideal de acordo com o seu estado nutricional.
+# Calculadora do Índice de Massa Corporal
+
+## Essa aplicação tem como o intuito fornecer o **Índice de Massa Corporal** do usuário, assim podendo saber se está acima, abaixo ou no peso ideal de acordo com o seu estado nutricional.
 
 ---
 
-## Para o desenvolvimento do projeto foram utilizadas as seguintes tecnologias:
+### Para o desenvolvimento do projeto foram utilizadas as seguintes tecnologias:
 
  - HTML5;
  - CSS3;
@@ -11,7 +13,7 @@
 
 ---
 
-## Funcionalidades:
+### Funcionalidades:
 
  - Calcular o IMC;
  - Exibir do valor do IMC;
@@ -20,7 +22,7 @@
 
 ---
 
-## Como usar: 
+### Como usar: 
 
  - Clone/Baixe o repositório;
  - Abra o arquivo "index.html".
