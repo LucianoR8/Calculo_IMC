@@ -1,6 +1,6 @@
 # Calculadora do Índice de Massa Corporal
 
-## Essa aplicação tem como o intuito fornecer o **Índice de Massa Corporal** do usuário, assim podendo saber se está acima, abaixo ou no peso ideal de acordo com o seu estado nutricional.
+## Essa aplicação tem como o intuito fornecer o Índice de Massa Corporal(IMC) do usuário, assim podendo saber se está acima, abaixo ou no peso ideal de acordo com o seu estado nutricional.
 
 ---
 
