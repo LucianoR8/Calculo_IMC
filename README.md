@@ -6,10 +6,11 @@
 
 ### Para o desenvolvimento do projeto foram utilizadas as seguintes tecnologias:
 
+ - VS Code(Editor de código).
  - HTML5;
  - CSS3;
- - JavaScript;
- - Visual Studio Code.
+ - JavaScript.
+ 
 
 ---
 
@@ -18,7 +19,7 @@
  - Calcular o IMC;
  - Exibir do valor do IMC;
  - Indicar grau nutricional atual;
- - Observação específica para cada grau.
+ - Observação específica para cada grau nutricional.
 
 ---
 
